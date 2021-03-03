@@ -1,4 +1,4 @@
-package com.ruoyi.web.controller.tool;
+package com.ruoyi.common.utils;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -54,5 +54,6 @@ public class PwdCheckUtil {
     assertEquals(true,checkPassword("AAa a12!!@AAaa"));
     assertEquals(true,checkPassword("Aa2!#$%&'()*@^_`{|}~"));
     assertEquals(true,checkPassword("Aa2! $%&'()*+,-./:;<"));
+    assertEquals(true,checkPassword("as@12AQQ"));
   }
 }
